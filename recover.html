@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recover Password - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="sign-in.html">Sign In</a>
+    <a href="register.html">Register</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Recover Password</h2>
+    <p>Enter your email to reset your password. We’ll send instructions to your inbox.</p>
+
+    <form onsubmit="recoverPassword(event)">
+      <label for="recover-email">Email:</label>
+      <input type="email" id="recover-email" required />
+      <br><br>
+
+      <p id="recover-msg" style="color: red;"></p>
+      <button type="submit">Send Recovery Email</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

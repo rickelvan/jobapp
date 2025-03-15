@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Listings - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="job-listings.html">Job Listings</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Find Your Next Job</h2>
+
+    <label for="search">Search:</label>
+    <input type="text" id="search" placeholder="Keyword, Job Title, etc." />
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" placeholder="City, State, etc." />
+
+    <button>Filter</button>
+
+    <h3>Available Job Listings</h3>
+    <div class="job-card">
+      <h4>Front-End Developer</h4>
+      <p>Company: ABC Tech</p>
+      <p>Location: New York</p>
+      <button onclick="alert('Apply action placeholder!')">Apply</button>
+    </div>
+
+    <div class="job-card">
+      <h4>Backend Engineer</h4>
+      <p>Company: XYZ Corp</p>
+      <p>Location: San Francisco</p>
+      <button onclick="alert('Apply action placeholder!')">Apply</button>
+    </div>
+
+    <div class="job-card">
+      <h4>UI/UX Designer</h4>
+      <p>Company: Creative Labs</p>
+      <p>Location: Remote</p>
+      <button onclick="alert('Apply action placeholder!')">Apply</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

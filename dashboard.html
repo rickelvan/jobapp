@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="job-listings.html">Job Listings</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Your Dashboard</h2>
+    <p>Welcome to your dashboard! (In a real system, we’d show personalized data here.)</p>
+
+    <h3>Applied Jobs</h3>
+    <ul>
+      <li>Job #1 (Company A)</li>
+      <li>Job #2 (Company B)</li>
+    </ul>
+
+    <h3>Saved Jobs</h3>
+    <ul>
+      <li>Job #3 (Company C)</li>
+      <li>Job #4 (Company D)</li>
+    </ul>
+
+    <h3>Notifications</h3>
+    <p>No new notifications.</p>
+
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

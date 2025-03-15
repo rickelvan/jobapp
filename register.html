@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="job-listings.html">Job Listings</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Register</h2>
+    <form onsubmit="register(event)">
+      <label for="reg-name">Full Name:</label>
+      <input type="text" id="reg-name" required />
+      <br /><br />
+
+      <label for="reg-email">Email:</label>
+      <input type="email" id="reg-email" required />
+      <br /><br />
+
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" required />
+      <br /><br />
+
+      <label for="reg-confirm-password">Confirm Password:</label>
+      <input type="password" id="reg-confirm-password" required />
+      <br /><br />
+
+      <p id="reg-error-msg" style="color: red;"></p>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="job-listings.html">Job Listings</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profile.html">Profile</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Your Profile</h2>
+    <!-- Placeholder for user image -->
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" />
+    
+    <label for="profile-name">Name:</label>
+    <input type="text" id="profile-name" value="John Doe" />
+    <br /><br />
+
+    <label for="profile-bio">Bio:</label>
+    <textarea id="profile-bio" rows="4" cols="50">Lorem ipsum dolor sit amet.</textarea>
+    <br /><br />
+
+    <button onclick="updateProfile()">Update Profile</button>
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

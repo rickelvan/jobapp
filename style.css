@@ -1,0 +1,304 @@
+/* ---------------------------------------------------
+   BASE & GLOBAL STYLES
+--------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: #ddd;
+}
+
+/* HEADERS & SECTIONS */
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* TITLES & TEXT */
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #00c3ff;
+    text-align: center;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* IMAGES */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* BUTTONS */
+button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #00c3ff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #ff5733;
+    color: white;
+}
+
+/* ---------------------------------------------------
+   NAVBAR & FOOTER
+--------------------------------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #00c3ff;
+    color: black;
+}
+
+/* Dark Mode Toggle Button within the navbar (optional) */
+.dark-mode-toggle {
+    border: none;
+    background: #00c3ff;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.dark-mode-toggle:hover {
+    background: #ff5733;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar a {
+        margin: 5px 0;
+    }
+}
+
+/* ---------------------------------------------------
+   HERO SECTION (HOME PAGE)
+--------------------------------------------------- */
+.hero-section {
+    /* If you have a hero background image, uncomment & set below:
+    background: url('YOUR_HERO_IMAGE.jpg') no-repeat center center/cover;
+    */
+    text-align: center;
+    padding: 80px 20px; /* Adjust for bigger/smaller hero */
+    margin: 20px;       /* Keep consistent spacing */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------
+   FEATURES SECTION (HOME PAGE)
+--------------------------------------------------- */
+.features-section {
+    text-align: center;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px; /* Adjust as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature-box h3 {
+    color: #00c3ff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #00c3ff;
+    padding-bottom: 5px;
+}
+
+/* ---------------------------------------------------
+   "HOW IT WORKS" SECTION
+--------------------------------------------------- */
+.how-it-works-section {
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.how-it-works-section h2 {
+    margin-bottom: 20px;
+}
+
+.how-it-works-section ol {
+    list-style: decimal;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* ---------------------------------------------------
+   TESTIMONIALS SECTION
+--------------------------------------------------- */
+.testimonials-section {
+    margin: 20px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.testimonials-section blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.testimonials-section cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* ---------------------------------------------------
+   FORMS & INPUTS
+--------------------------------------------------- */
+form {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #00c3ff;
+}
+
+/* ---------------------------------------------------
+   MEDIA QUERIES
+--------------------------------------------------- */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 20px;
+    }
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-box {
+        width: 80%;
+        max-width: 400px;
+    }
+    .how-it-works-section ol {
+        max-width: 100%;
+    }
+    .testimonials-section blockquote {
+        max-width: 100%;
+        margin: 20px;
+    }
+}

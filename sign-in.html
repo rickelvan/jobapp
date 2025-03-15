@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign In - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="job-listings.html">Job Listings</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Login</h2>
+    <form onsubmit="login(event)">
+      
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <br /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+      <br /><br />
+
+      <!-- Role Selection -->
+      <label for="roleSelect">Select Role:</label>
+      <select id="roleSelect" required>
+        <option value="employee">Employee (Job Seeker)</option>
+        <option value="employer">Employer</option>
+        <option value="admin">Administrator</option>
+      </select>
+      <br /><br />
+
+      <!-- Keep Me Signed In -->
+      <label for="keepSignedIn">
+        <input type="checkbox" id="keepSignedIn" />
+        Keep me signed in
+      </label>
+      <br /><br />
+
+      <!-- Error Message -->
+      <p id="error-msg" style="color: red;"></p>
+
+      <!-- Submit -->
+      <button type="submit">Login</button>
+    </form>
+
+    <p>
+      Forgot your password?
+      <a href="register.html">Recover Account or Register New</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> |
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

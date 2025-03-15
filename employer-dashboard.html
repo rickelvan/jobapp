@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employer Dashboard - Job Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Portal - Employer Dashboard</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="job-listings.html">Public Job Listings</a>
+    <a href="#" onclick="logout()">Logout</a>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+  </nav>
+
+  <section>
+    <h2>Manage Your Job Listings</h2>
+    <button onclick="createNewJob()">Post a New Job</button>
+    <!-- List of the employer's jobs, each with "View Applicants", "Edit", "Delete" options -->
+  </section>
+
+  <section>
+    <h2>View Applicants</h2>
+    <!-- Show applicants for each job, with shortlist, accept, reject actions -->
+  </section>
+
+  <section>
+    <h2>Company Profile</h2>
+    <!-- Employer can upload/update company logo, change company details, etc. -->
+  </section>
+
+  <footer>
+    <p>
+      <a href="#">Terms &amp; Conditions</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Contact Us</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Example function for creating a new job
+    function createNewJob() {
+      alert('Placeholder: Show a form or modal to input new job details.');
+    }
+  </script>
+</body>
+</html>

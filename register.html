@@ -13,12 +13,13 @@
   <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="job-listings.html">Job Listings</a>
+    <a href="sign-in.html">Sign In</a>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
   </nav>
 
   <section>
     <h2>Register</h2>
-    <form onsubmit="register(event)">
+    <form onsubmit="registerUser(event)">
       <label for="reg-name">Full Name:</label>
       <input type="text" id="reg-name" required />
       <br /><br />
@@ -35,9 +36,30 @@
       <input type="password" id="reg-confirm-password" required />
       <br /><br />
 
+      <!-- New: Role Selection -->
+      <label for="reg-role">Registering As:</label>
+      <select id="reg-role" required>
+        <option value="">--Select Role--</option>
+        <option value="employee">Employee (Job Seeker)</option>
+        <option value="employer">Employer</option>
+        <option value="admin">Administrator</option>
+      </select>
+      <br /><br />
+
       <p id="reg-error-msg" style="color: red;"></p>
       <button type="submit">Register</button>
     </form>
+
+    <p>
+      Already have an account? 
+      <a href="sign-in.html">Sign In</a>
+    </p>
+
+    <!-- Option for password recovery if user forgets password -->
+    <p>
+      Forgot your password and want to keep the same account?
+      <a href="recover.html">Recover Password</a>
+    </p>
   </section>
 
   <footer>
